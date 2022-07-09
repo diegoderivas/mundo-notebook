@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Título página -->
+    <title>Arquitectura | Mundo Notebook</title>
+</head>
+
+<body>
+    <!-- Cabecera del sitio -->
+    <header>
+        <a href="../index.html"><img class="header__logo" src="../recursos/mundo_notebook.png" alt="Logo Mundo Notebook"></a>
+        <!-- Buscador y menú de navegación -->
+        <div class="header__buscadorynav">
+            <!-- Buscador -->
+            <form method="post" class="header__buscador">
+                <form method="post" class="header__buscador">
+                    <input class="header__form" type="search" placeholder="Buscar Productos"> 
+                    <button class="header__boton" type="button"><img src="../recursos/lupa.png" alt="buscar"></button>
+                </form>
+            <!-- Menú de navegación -->
+            <nav>
+                <ul class="header__lista">
+                    <li class="header__item"><a href="../index.html">Inicio</a></li>
+                    <li class="header__item"><a href="productos.html">Productos</a></li>
+                    <li class="header__item"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main--flex">
+        <!-- Menú de categorías -->
+        <aside class="lateral">
+            <h2>Categorías</h2>
+            <ul class="lateral__lista">
+                <li><a href="productos.html">Todos los productos</a></li>
+                <li><a href="arquitectura.html">Arquitectura</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="hogar_y_oficina.html">Hogar y Oficina</a></li>
+            </ul>
+        </aside>
+
+        <!-- Productos de arquitectura -->
+        <section class="galeria">
+            <h1 class="titulo--prod">Arquitectura</h1>
+            <article class="galeria__tarjeta">
+                <img class="galeria__img" src="../recursos/arq_acer_aspire.png" alt="Acer Aspire">
+                <h3>Acer Aspire</h3>
+            </article>
+            <article class="galeria__tarjeta">
+                <img class="galeria__img" src="../recursos/arq_dell_inspiron.png" alt="Dell Inspirion">
+                <h3>Dell Inspirion</h3>
+            </article>
+            <article class="galeria__tarjeta">
+                <img class="galeria__img" src="../recursos/arq_lenovo_thinkpad.png" alt="Lenovo Thinkpad">
+                <h3>Lenovo Thinkpad</h3>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="index.html"><img class="footer__logo" src="../recursos/mundo_notebook.png" alt="Logo Mundo Notebook"></a>
+        <p>Copyright ©2022 Todos los derechos reservados</p>
+        <!-- Redes Sociales -->
+        <div class="footer__redes">
+            <a href="https://facebook.com"><img class="footer__icono" src="../recursos/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com"><img class="footer__icono" src="../recursos/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com"><img class="footer__icono" src="../recursos/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>

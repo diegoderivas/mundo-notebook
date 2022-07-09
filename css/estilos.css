@@ -1,0 +1,295 @@
+/* Reset CSS */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* Fuentes */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Estilo Header */
+header{
+    background-color: #302f4e;
+    display:flex;
+    align-items:center;
+}
+
+.header__logo{
+    width: 265px;
+    padding: 0 16px;
+}
+
+.header__buscadorynav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow:1;
+    flex-wrap: wrap;
+}
+
+/* Buscador */
+.header__buscador{
+    display: flex;
+    margin-right: 30px;
+}
+
+.header__form{
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+}
+
+.header__boton{
+    height: 40px;
+}
+
+.header__boton img{
+    height:40px;
+}
+
+/* Menú de navegación */
+.header__item{
+    display:inline;
+    padding: 0 0 0 16px;
+    margin: 0 16px 0 0;
+}
+
+.header__item a{
+    color:#ee8968;
+    font-size: 20px;
+}
+
+/* Estilo Footer */
+footer{
+    background-color: #302f4e;
+    padding: 16px;
+    color:#ee8968;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__logo{
+    height: 70px;
+
+}
+
+.footer__icono{
+    width: 35px;
+    margin:10px
+}
+
+/* Estilo Main Index */
+
+.portada--index{
+    width: 100vw;
+    margin-bottom:50px;
+}
+
+.main--index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main--index h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 20px 0 50px 0;
+    color:#302f4e;
+}
+
+/* Estilo Categorias Index*/
+.categorias{
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:"gam arq ofi";
+    align-items: center;
+    justify-items: center;
+    padding: 16px;
+}
+
+
+.categorias__img:hover{
+    transform: scale(1.15,1.15);
+    transition: all 0.25s;
+}
+
+.categorias__tarjeta a h2{
+    text-align: center;
+    color:#ee8968;
+    background-color: #302f4e;
+}
+
+.categorias__tarjeta--gaming{
+    grid-area: gam;
+}
+
+.categorias__tarjeta--arquitectura{
+    grid-area: arq;
+}
+
+.categorias__tarjeta--oficina{
+    grid-area: ofi
+}
+
+.categorias__img{
+    height: 220px;
+}
+
+/* Estilo info index */
+.info{
+    margin: 200px 0 200px 0;
+    display:flex;
+}
+
+.info__tarjetas{
+    display:flex;
+    align-items: center;
+    height: 50px;
+    margin: 10px;
+    padding:10px;
+    border:solid;
+}
+
+.info__tarjetas p{
+    font-weight: 900;
+    padding:10px;
+}
+
+/* Estilo Main Productos */
+.main--flex{
+    display: flex;
+}
+
+/* Estilo Menú Lateral */
+.lateral{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding:16px;
+    margin-top:50px;
+}
+
+.lateral__lista{
+    list-style: none;
+}
+
+.lateral__lista li{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.lateral__lista li a{
+    text-decoration: none;
+    color:#5551a8;
+    font-weight: 700;
+}
+
+/* Estilo Galería */
+.galeria{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin:20px;
+}
+
+.galeria h1{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color:#302f4e;
+    margin: 40px 0 0 30px;
+}
+
+.galeria__tarjeta{
+    border:solid 1px rgb(202, 202, 202);
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding:10px;
+}
+
+.galeria__tarjeta h3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.galeria__img{
+    height: 200px;
+}
+
+/* Estilo Contacto */
+.main--centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main--centrado p{
+    font-weight: bold;
+    font-size: large;
+    margin: 10px 0 32px 0;
+}
+
+/* Mapa */
+.mapa{
+    width: 97vw;
+    height: 50vh;
+}
+
+/* Formulario */
+.formytel{
+    width: 98vw;
+    margin: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formytel article h2{
+    margin-bottom: 15px;
+}
+
+.formytel__form div input{ 
+    width:300px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding:3px
+}
+
+.formytel__form div textarea{
+    width: 300px;
+    padding:3px;
+}
+
+
+/* Media Queries para celular*/
+@media screen and (min-width: 320px) and (max-width: 575px){
+
+}
+
+/* Media Queries para tablet */
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+}
