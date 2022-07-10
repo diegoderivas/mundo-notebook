@@ -26,7 +26,7 @@ header{
 
 .header__logo{
     width: 265px;
-    padding: 0 16px;
+    padding: 16px;
 }
 
 .header__buscadorynav{
@@ -70,6 +70,14 @@ header{
     font-size: 20px;
 }
 
+.header__item a:hover{
+    color: #302f4e;
+    background-color: #ee8968;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
 /* Estilo Footer */
 footer{
     background-color: #302f4e;
@@ -94,6 +102,12 @@ footer{
 /* Estilo Main Index */
 
 .portada--index{
+    width: 100vw;
+    margin-bottom:50px;
+}
+
+.portada--recortada{
+    display:none;
     width: 100vw;
     margin-bottom:50px;
 }
@@ -123,6 +137,22 @@ footer{
     padding: 16px;
 }
 
+.categorias__gam{
+    grid-area: gam;
+}
+
+.categorias__arq{
+    grid-area: arq;
+}
+
+.categorias__ofi{
+    grid-area:ofi;
+}
+
+.categorias__img{
+    height: 15vw;
+    width:auto;
+}
 
 .categorias__img:hover{
     transform: scale(1.15,1.15);
@@ -133,6 +163,7 @@ footer{
     text-align: center;
     color:#ee8968;
     background-color: #302f4e;
+    border-radius: 10px;
 }
 
 .categorias__tarjeta--gaming{
@@ -147,21 +178,37 @@ footer{
     grid-area: ofi
 }
 
-.categorias__img{
-    height: 220px;
-}
-
 /* Estilo info index */
 .info{
-    margin: 200px 0 200px 0;
-    display:flex;
+    margin: 100px 0 100px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "envios garantia credito telefono";
+    gap: 10px;
+}
+
+.info__envios{
+    grid-area: envios;
+}
+
+.info__garantia{
+    grid-area: garantia;
+}
+
+.info__credito{
+    grid-area: credito;
+}
+
+.info__telefono{
+    grid-area: telefono;
 }
 
 .info__tarjetas{
     display:flex;
     align-items: center;
     height: 50px;
-    margin: 10px;
+/*     margin: 10px; */
     padding:10px;
     border:solid;
 }
@@ -285,11 +332,158 @@ footer{
 
 
 /* Media Queries para celular*/
-@media screen and (min-width: 320px) and (max-width: 575px){
+@media only screen and (min-width: 320px) and (max-width: 575px){
+    /* Header */
+    header{
+        flex-direction: column;
+    }
 
+    .header__buscadorynav{
+        flex-direction: column;
+    }
+
+    /* Buscador */
+    .header__buscador{
+        order: 1;
+        margin:16px;
+    }
+
+    /* Navegación */
+    .header__item{
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    /* Footer */
+    footer{
+        flex-direction: column;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    footer p span{
+        display:block;
+    }
+    
+
+    /* Index Portada */
+    .portada--index{
+        display:none;
+    }
+
+    .portada--recortada{
+        display:block;
+    }
+
+    /* Index Título */
+    .main--index h1{
+        font-size:30px;
+        margin: 0;
+    }
+
+    /* Index categorias */
+    .categorias{
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:"gam" 
+                            "arq" 
+                            "ofi";
+        row-gap:20px;
+    }
+
+    .categorias__img{
+        height: auto;
+        width: 75vw;
+    }
+
+    /* Index info */
+    .info{
+        margin: 50px 0 50px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: "envios" 
+                            "garantia" 
+                            "credito" 
+                            "telefono";
+        gap: 10px;
+    }
 }
 
-/* Media Queries para tablet */
-@media screen and (min-width: 576px) and (max-width: 992px){
 
+
+/* Media Queries para tablet */
+@media only screen and (min-width: 576px) and (max-width: 992px){
+    /* Header */
+    header{
+        flex-direction: column;
+    }
+
+    .header__buscadorynav{
+        flex-direction: column;
+    }
+
+    /* Buscador */
+    .header__buscador{
+        order: 1;
+        margin:16px;
+    }
+
+    /* Footer */
+    footer p{
+        text-align: center;
+    }
+
+    footer p span{
+        display:block;
+    }
+    
+
+    /* Index Portada */
+    .portada--index{
+        display:none;
+    }
+
+    .portada--recortada{
+        display:block;
+    }
+
+    /* Index Título */
+    .main--index h1{
+        font-size:30px;
+        margin: 0;
+    }
+
+    /* Index categorias */
+    .categorias{
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:"gam" 
+                            "arq" 
+                            "ofi";
+        row-gap:50px;
+    }
+
+    .categorias__img{
+        height: auto;
+        width: 50vw;
+    }
+
+    /* Index info */
+    .info{
+        margin: 50px 0 50px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "envios garantia" 
+                            "credito telefono";
+        gap: 10px;
+    }
 }
