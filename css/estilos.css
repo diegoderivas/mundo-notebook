@@ -69,6 +69,7 @@ header{
 .header__item a{
     color:#ee8968;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .header__item a:hover{
@@ -233,6 +234,10 @@ footer{
     margin-top:50px;
 }
 
+.lateral h2{
+    text-decoration: underline;
+}
+
 .lateral__lista{
     list-style: none;
 }
@@ -243,9 +248,16 @@ footer{
 }
 
 .lateral__lista li a{
-    text-decoration: none;
-    color:#5551a8;
+    color:#302f4e;
     font-weight: 700;
+}
+
+.lateral__lista li a:hover{
+    background-color: #302f4e;
+    padding:5px;
+    border-radius: 5px;
+    color:#ee8968;
+    transition: all 0.5s;
 }
 
 /* Estilo Galería */
@@ -258,6 +270,7 @@ footer{
                         "zephyrus legion predator"
                         "vivobook pavilion ideapad";
     margin:20px;
+    gap:1vw;
 }
 
 .titulo--prod{
@@ -314,12 +327,16 @@ footer{
 .galeria__tarjeta{
     border:solid 1px rgb(202, 202, 202);
     border-radius: 10px;
-    width: 400px;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
     padding:10px;
+}
+
+.galeria__tarjeta:hover{
+    background-color:rgb(202, 202, 202);
+    transition: all 0.7s;
 }
 
 .galeria__tarjeta h3{
@@ -459,6 +476,55 @@ footer{
                             "telefono";
         gap: 10px;
     }
+
+        /* Main Productos */
+        .main--flex{
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        /* Estilo Menú Lateral */
+        .lateral{
+            width: auto;
+            margin-top:0;
+            padding-bottom: 0;
+        }
+    
+        .lateral h2{
+            text-align: center;
+        }
+    
+        .lateral__lista li{
+            text-align: center;
+        }
+    
+        /* Productos galería */
+        .galeria--prod{
+            
+            display:grid;
+            grid-template-columns: repeat (2,1fr);
+            grid-template-rows: repeat (6,1fr);
+            grid-template-areas:"productos" 
+                                "aspire" 
+                                "inspirion"  
+                                "thinkpad" 
+                                "zephyrus"
+                                "legion" 
+                                "predator"
+                                "vivobook" 
+                                "pavilion" 
+                                "ideapad";
+            margin:20px;
+            gap:2vw;
+        }
+    
+        .galeria__tarjeta{
+            width: 80vw;
+        }
+        
+        .galeria__img{
+            height: 40vw;
+        }
 }
 
 
@@ -531,5 +597,93 @@ footer{
         grid-template-areas: "envios garantia" 
                             "credito telefono";
         gap: 10px;
+    }
+
+    /* Main Productos */
+    .main--flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilo Menú Lateral */
+    .lateral{
+        margin-top:0;
+        padding-bottom: 0;
+    }
+
+    .lateral h2{
+        text-align: center;
+    }
+
+    .lateral__lista li{
+        text-align: center;
+    }
+
+    /* Productos galería */
+    .galeria--prod{
+        
+        display:grid;
+        grid-template-columns: repeat (2,1fr);
+        grid-template-rows: repeat (6,1fr);
+        grid-template-areas:"productos productos"
+                            "aspire inspirion"  
+                            "thinkpad zephyrus"
+                            "legion predator"
+                            "vivobook pavilion" 
+                            "ideapad .";
+        margin:20px;
+        gap:1vw;
+    }
+
+    .galeria__tarjeta{
+        width: 40vw;
+    }
+    
+    .galeria__img{
+        height: 20vw;
+    }
+}
+
+
+/* Media Queries adicionales para arreglar el footer */
+@media only screen and (min-width: 576px) and (max-width: 618px){
+        /* Footer */
+        footer{
+            flex-direction: column;
+        }
+    
+        footer p{
+            text-align: center;
+        }
+    
+        footer p span{
+            display:block;
+        }
+}
+
+
+/* Media queries adicionales para arreglar el grid de productos */
+@media only screen and (min-width: 993px) and (max-width: 1130px){
+    .galeria--prod{
+        
+        display:grid;
+        grid-template-columns: repeat (2,1fr);
+        grid-template-rows: repeat (6,1fr);
+        grid-template-areas:"productos productos"
+                            "aspire inspirion"  
+                            "thinkpad zephyrus"
+                            "legion predator"
+                            "vivobook pavilion" 
+                            "ideapad .";
+        margin:20px;
+        gap:1vw;
+    }
+
+    .galeria__tarjeta{
+        width: 30vw;
+    }
+    
+    .galeria__img{
+        height: 15vw;
     }
 }
