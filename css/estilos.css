@@ -11,6 +11,7 @@
 
 h1, h2, h3{
     font-family: 'Poppins', sans-serif;
+    color:#302f4e;
 }
 
 a{
@@ -248,12 +249,57 @@ footer{
 }
 
 /* Estilo Galería */
-.galeria{
-    display:flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+.galeria--prod{
+    display:grid;
+    grid-template-columns: repeat (3,1fr);
+    grid-template-rows: repeat (4,1fr);
+    grid-template-areas:"productos productos productos"
+                        "aspire inspirion thinkpad"
+                        "zephyrus legion predator"
+                        "vivobook pavilion ideapad";
     margin:20px;
+}
+
+.titulo--prod{
+    grid-area:productos;
+    text-align: center;
+    font-size: 40px;
+}
+
+.aspire{
+    grid-area: aspire;
+}
+
+.inspirion{
+    grid-area: inspirion;
+}
+
+.thinkpad{
+    grid-area: thinkpad;
+}
+
+.zephyrus{
+    grid-area: zephyrus;
+}
+
+.legion{
+    grid-area: legion;
+}
+
+.predator{
+    grid-area: predator;
+}
+
+.vivobook{
+    grid-area: vivobook;
+}
+
+.pavilion{
+    grid-area: pavilion;
+}
+
+.ideapad{
+    grid-area: ideapad;
 }
 
 .galeria h1{
@@ -282,7 +328,7 @@ footer{
 }
 
 .galeria__img{
-    height: 200px;
+    height: 10vw;
 }
 
 /* Estilo Contacto */
