@@ -1,4 +1,4 @@
-<h1>Mundo Notebook - proyecto CoderHouse</h1>
+<h1>Mundo Notebook - Proyecto CoderHouse</h1>
 <p>Este sitio es para un emprendimiento ficticio de venta de notebooks, pensado para el curso de Desarrollo Web de CoderHouse </p> 
 
 <h2>Tecnologías usadas</h2>
