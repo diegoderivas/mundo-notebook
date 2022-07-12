@@ -264,11 +264,17 @@ footer{
 .galeria--prod{
     display:grid;
     grid-template-columns: repeat (3,1fr);
-    grid-template-rows: repeat (4,1fr);
+    grid-template-rows: auto;
     grid-template-areas:"productos productos productos"
                         "aspire inspirion thinkpad"
+                        "macbook zbook surfacebook"
+                        "stealth blade notebook_9"
                         "zephyrus legion predator"
-                        "vivobook pavilion ideapad";
+                        "nitro strix tuf"
+                        "aero aorus katana"
+                        "vivobook pavilion ideapad"
+                        "swift max cloudbook"
+                        "v15 modern flash";
     margin:20px;
     gap:1vw;
 }
@@ -291,6 +297,18 @@ footer{
     grid-area: thinkpad;
 }
 
+.macbook{
+    grid-area: macbook;
+}
+
+.zbook{
+    grid-area: zbook;
+}
+
+.surfacebook{
+    grid-area: surfacebook;
+}
+
 .zephyrus{
     grid-area: zephyrus;
 }
@@ -303,6 +321,30 @@ footer{
     grid-area: predator;
 }
 
+.nitro{
+    grid-area: nitro;
+}
+
+.strix{
+    grid-area: strix;
+}
+
+.tuf{
+    grid-area: tuf;
+}
+
+.aero{
+    grid-area: aero
+}
+
+.aorus{
+    grid-area: aorus
+}
+
+.katana{
+    grid-area: katana;
+}
+
 .vivobook{
     grid-area: vivobook;
 }
@@ -313,6 +355,30 @@ footer{
 
 .ideapad{
     grid-area: ideapad;
+}
+
+.swift{
+    grid-area: swift;
+}
+
+.max{
+    grid-area: max;
+}
+
+.cloudbook{
+    grid-area: cloudbook;
+}
+
+.v15{
+    grid-area: v15;
+}
+
+.modern{
+    grid-area: modern;
+}
+
+.flash{
+    grid-area: flash;
 }
 
 .galeria h1{
@@ -559,17 +625,34 @@ footer{
             
             display:grid;
             grid-template-columns: repeat (2,1fr);
-            grid-template-rows: repeat (6,1fr);
-            grid-template-areas:"productos" 
+            grid-template-areas:"productos"
                                 "aspire" 
-                                "inspirion"  
-                                "thinkpad" 
-                                "zephyrus"
+                                "inspirion" 
+                                "thinkpad"
+                                "macbook" 
+                                "zbook" 
+                                "surfacebook"
+                                "stealth" 
+                                "blade" 
+                                "notebook_9"
+                                "zephyrus" 
                                 "legion" 
                                 "predator"
+                                "nitro" 
+                                "strix" 
+                                "tuf"
+                                "aero"
+                                "aorus" 
+                                "katana"
                                 "vivobook" 
                                 "pavilion" 
-                                "ideapad";
+                                "ideapad"
+                                "swift" 
+                                "max" 
+                                "cloudbook"
+                                "v15" 
+                                "modern" 
+                                "flash";
             margin:20px;
             gap:2vw;
         }
@@ -709,13 +792,21 @@ footer{
     /* Productos galería */
     .galeria--prod{
         grid-template-columns: repeat (2,1fr);
-        grid-template-rows: repeat (6,1fr);
         grid-template-areas:"productos productos"
-                            "aspire inspirion"  
-                            "thinkpad zephyrus"
+                            "aspire inspirion" 
+                            "thinkpad macbook"
+                            "zbook surfacebook"
+                            "stealth blade" 
+                            "notebook_9 zephyrus"
                             "legion predator"
+                            "nitro strix" 
+                            "tuf aero"
+                            "aorus katana"
                             "vivobook pavilion" 
-                            "ideapad .";
+                            "ideapad swift"
+                            "max cloudbook"
+                            "v15 modern" 
+                            "flash .";
     }
 
     .galeria__tarjeta{
@@ -775,13 +866,21 @@ footer{
     /* Productos galería */
     .galeria--prod{
         grid-template-columns: repeat (2,1fr);
-        grid-template-rows: repeat (6,1fr);
         grid-template-areas:"productos productos"
-                            "aspire inspirion"  
-                            "thinkpad zephyrus"
+                            "aspire inspirion" 
+                            "thinkpad macbook"
+                            "zbook surfacebook"
+                            "stealth blade" 
+                            "notebook_9 zephyrus"
                             "legion predator"
+                            "nitro strix" 
+                            "tuf aero"
+                            "aorus katana"
                             "vivobook pavilion" 
-                            "ideapad .";
+                            "ideapad swift"
+                            "max cloudbook"
+                            "v15 modern" 
+                            "flash .";
     }
 
     .galeria__tarjeta{
