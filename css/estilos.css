@@ -21,8 +21,6 @@ a{
 /* Estilo Header */
 header{
     background-color: #302f4e;
-    display:flex;
-    align-items:center;
 }
 
 .header__logo{
@@ -30,54 +28,42 @@ header{
     padding: 16px;
 }
 
-.header__buscadorynav{
+/* Menú de navegación */
+.header__navegacion{
     display:flex;
     justify-content: flex-end;
-    align-items: center;
-    flex-grow:1;
-    flex-wrap: wrap;
 }
 
-/* Buscador */
-.header__buscador{
-    display: flex;
-    margin-right: 30px;
-}
-
-.header__form{
-    border-radius: 5px;
-    width: 250px;
-    height: 40px;
-    padding: 10px;
-}
-
-.header__boton{
-    height: 40px;
-}
-
-.header__boton img{
-    height:40px;
-}
-
-/* Menú de navegación */
 .header__item{
-    display:inline;
-    padding: 0 0 0 16px;
-    margin: 0 16px 0 0;
-}
-
-.header__item a{
-    color:#ee8968;
     font-size: 20px;
     font-weight: 700;
+    color:#ee8968;
 }
 
-.header__item a:hover{
-    color: #302f4e;
+.header__item:hover{
+    text-decoration:underline;
+    color:#ee8968;
+}
+
+.dropdown-item:active{
     background-color: #ee8968;
-    padding: 8px;
-    border-radius: 10px;
-    transition: all 0.2s;
+}
+
+.navbar-toggler{
+    background-color: #ee8968;
+}
+
+.img__lupa{
+    height: 25px;
+}
+
+.btn{
+    border:#ee8968 1px solid;
+}
+
+.btn:hover{
+    background-color: #ee8968;
+    border:#ee8968 1px solid;
 }
 
 /* Estilo Footer */
@@ -518,28 +504,7 @@ footer{
 
 /* Media Queries para celular*/
 @media only screen and (min-width: 320px) and (max-width: 575px){
-    /* Header */
-    header{
-        flex-direction: column;
-    }
 
-    .header__buscadorynav{
-        flex-direction: column;
-    }
-
-    /* Buscador */
-    .header__buscador{
-        order: 1;
-        margin:16px;
-    }
-
-    /* Navegación */
-    .header__item{
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
-    
     /* Footer */
     footer{
         flex-direction: column;
@@ -701,21 +666,6 @@ footer{
 
 /* Media Queries para tablet */
 @media only screen and (min-width: 576px) and (max-width: 992px){
-    /* Header */
-    header{
-        flex-direction: column;
-    }
-
-    .header__buscadorynav{
-        flex-direction: column;
-    }
-
-    /* Buscador */
-    .header__buscador{
-        order: 1;
-        margin:16px;
-    }
-
     /* Footer */
     footer p{
         text-align: center;

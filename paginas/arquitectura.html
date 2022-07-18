@@ -21,24 +21,44 @@
 <body>
     <!-- Cabecera del sitio -->
     <header>
-        <a href="../index.html"><img class="header__logo" src="../recursos/mundo_notebook.png" alt="Logo Mundo Notebook"></a>
-        <!-- Buscador y menú de navegación -->
-        <div class="header__buscadorynav">
-            <!-- Buscador -->
-            <form method="post" class="header__buscador">
-                <form method="post" class="header__buscador">
-                    <input class="header__form" type="search" placeholder="Buscar Productos"> 
-                    <button class="header__boton" type="button"><img src="../recursos/lupa.png" alt="buscar"></button>
-                </form>
-            <!-- Menú de navegación -->
-            <nav>
-                <ul class="header__lista">
-                    <li class="header__item"><a href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a href="productos.html">Productos</a></li>
-                    <li class="header__item"><a href="contacto.html">Contacto</a></li>
-                </ul>
+        <!-- Menú de navegación -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid header__navegacion">
+                    <!-- Logo Mundo Notebook -->
+                    <a class="navbar-brand" href="../index.html"><img class="header__logo" src="../recursos/mundo_notebook.png" alt="Logo Mundo Notebook"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Navegación -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link header__item" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown header__item">
+                                <a class="nav-link dropdown-toggle header__item" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorías
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="arquitectura.html">Arquitectura</a></li>
+                                    <li><a class="dropdown-item" href="gaming.html">Gaming</a></li>
+                                    <li><a class="dropdown-item" href="hogar_y_oficina.html">Hogar y Oficina</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="productos.html">Todos Los Productos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__item me-5" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <!-- Buscador -->
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar Productos..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><img class="img__lupa" src="../recursos/lupa.png" alt="Buscar"></button>
+                        </form>
+                    </div>
+                </div>
             </nav>
-        </div>
     </header>
 
     <!-- Main -->
