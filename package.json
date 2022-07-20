@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "<h1>Mundo Notebook - Proyecto CoderHouse</h1>\r <p>Este sitio es para un emprendimiento ficticio de venta de notebooks, pensado para el curso de Desarrollo Web de CoderHouse </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoderivas/mundo-notebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoderivas/mundo-notebook/issues"
+  },
+  "homepage": "https://github.com/diegoderivas/mundo-notebook#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
