@@ -62,50 +62,42 @@
     </header>
 
     <!-- Main -->
-    <main class="main--centrado">
-        <h1>Contacto</h1>
-        <!-- Mapa de ubicación del local -->
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2863.0535811112!2d-64.18627708860132!3d-31.420636237661007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses-419!2sar!4v1655664325384!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Encontranos en el Patio Olmos Shopping, todos los días de 10 a 22 hs</p>
-        <!-- Formulario de contacto y teléfono -->
-        <section class="formytel">
-            <article> 
-                <h2>Déjenos su mensaje</h2>
+    <main class="container-fluid">
+        <h1 class="row justify-content-center mt-3 mb-4">Contacto</h1>
+
+        <!-- Formulario de contacto y mapa -->
+        <section class="row">
+            <article class="col-12 col-lg-6"> 
+                <h2 class="text-center mb-3">Déjenos su mensaje</h2>
+                <!-- Formulario -->
                 <form class="formytel__form" method="post">
-                    <div>
-                        <label for="nombre_y_apellido">Nombre y Apellido</label>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Juan Pérez">
+                        <label for="floatingInput">Nombre</label>
                     </div>
-                    <div>
-                        <input type="text" id="nombre_y_apellido" name="nombre_y_apellido" placeholder="Juan Pérez">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingMail" placeholder="name@example.com">
+                        <label for="floatingMail">Correo Electrónico</label>
                     </div>
-                    <div>
-                        <label for="correo_electronico">Correo Electrónico</label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Comentarios..." id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Comentarios</label>
                     </div>
-                    <div>
-                        <input type="email" id="correo_electronico" name="correo_electronico" placeholder="juanperez@gmail.com">
-                    </div>
-                    <div>
-                        <label for="asunto">Asunto</label>
-                    </div>
-                    <div>
-                        <input type="text" id="asunto" name="asunto">
-                    </div>
-                    <div>
-                        <label for="mensaje">Mensaje</label>
-                    </div>
-                    <div>
-                        <textarea name="mensaje" id="mensaje"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
+                    <!-- Botones -->
+                    <div class="mt-3 d-flex justify-content-center">
+                        <button class="btn me-2" type="button">Enviar</button>
+                        <button class="btn" type="reset">Borrar</button>
                     </div>
                 </form>
             </article>
-            <article class="info__tarjetas">
-                <img src="../recursos/telefono.png" alt="Teléfono">
-                <p>(351) 4123456</p>
+            
+            <!-- Mapa de ubicación del local -->
+            <article class="col-12 col-lg-6">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2863.0535811112!2d-64.18627708860132!3d-31.420636237661007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses-419!2sar!4v1655664325384!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="text-center">Encontranos en el Patio Olmos Shopping, todos los días de 10 a 22 hs</p>
             </article>
         </section>
+
     </main>
 
     <!-- Footer -->
