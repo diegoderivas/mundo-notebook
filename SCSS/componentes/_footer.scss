@@ -1,0 +1,23 @@
+/* Estilo Footer */
+footer{
+    background-color: $violeta-principal;
+    padding: 16px;
+    color: $naranja-principal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    .footer{
+        &__logo{
+            height: 70px;
+        }
+        
+        &__icono{
+            width: 35px;
+            margin:10px
+        }
+    }
+}
+
+

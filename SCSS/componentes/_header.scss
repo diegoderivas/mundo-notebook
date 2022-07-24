@@ -1,0 +1,41 @@
+/* Estilo Header */
+header{
+    background-color: $violeta-principal;
+    
+    .header{
+        &__logo{
+            width: 265px;
+            padding: 16px;
+        }
+        
+        /* Menú de navegación */
+        &__navegacion{
+            display:flex;
+            justify-content: flex-end;
+        }
+        
+        &__item{
+            font-size: 20px;
+            font-weight: 700;
+            color:$naranja-principal;
+            &:hover{
+                text-decoration:underline;
+                color:$naranja-principal;
+            }
+        }
+    }
+}
+
+
+.img__lupa{
+    height: 25px;
+}
+
+.btn{
+    border:#ee8968 1px solid;
+}
+
+.btn:hover{
+    background-color: #ee8968;
+    border:#ee8968 1px solid;
+}

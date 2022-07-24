@@ -1,0 +1,121 @@
+/* Media Queries para tablet */
+@media only screen and (min-width: 576px) and (max-width: 992px){
+    /* Footer */
+    footer p{
+        text-align: center;
+    }
+
+    footer p span{
+        display:block;
+    }
+    
+
+    /* Index Portada */
+    .portada--index{
+        display:none;
+    }
+
+    .portada--recortada{
+        display:block;
+        width:100%;
+    }
+
+    /* Index Título */
+    .main--index h1{
+        font-size:30px;
+        margin: 0;
+    }
+
+    /* Index categorias */
+    .categorias{
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:"gam" 
+                            "arq" 
+                            "ofi";
+        row-gap:50px;
+    }
+
+    .categorias__img{
+        height: auto;
+        width: 50vw;
+    }
+
+    /* Index info */
+    .info{
+        margin: 50px 0 50px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "envios garantia" 
+                            "credito telefono";
+        gap: 10px;
+    }
+
+    /* Main Productos */
+    .main--flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilo Menú Lateral */
+    .lateral{
+        margin-top:0;
+        padding-bottom: 0;
+        width: auto;
+    }
+
+    .lateral h2{
+        text-align: center;
+    }
+
+    .lateral__lista li{
+        text-align: center;
+    }
+
+    /* Productos galería */
+    .galeria--prod{
+        grid-template-columns: repeat (2,1fr);
+        grid-template-areas:"productos productos"
+                            "aspire inspirion" 
+                            "thinkpad macbook"
+                            "zbook surfacebook"
+                            "stealth blade" 
+                            "notebook_9 zephyrus"
+                            "legion predator"
+                            "nitro strix" 
+                            "tuf aero"
+                            "aorus katana"
+                            "vivobook pavilion" 
+                            "ideapad swift"
+                            "max cloudbook"
+                            "v15 modern" 
+                            "flash .";
+    }
+
+    .galeria__tarjeta{
+        width: 40vw;
+    }
+    
+    .galeria__img{
+        height: 20vw;
+    }
+
+    /* Categorías galería */
+    .galeria--cat{
+        grid-template-columns: repeat (2,1fr);
+        grid-template-areas:"productos productos"
+                            "cat1 cat2" 
+                            "cat3 cat4"
+                            "cat5 cat6"
+                            "cat7 cat8" 
+                            "cat9 .";
+    }
+
+    /* Contacto */
+    .main--centrado p{
+        margin-bottom:0;
+    }
+}

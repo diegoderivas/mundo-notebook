@@ -1,0 +1,34 @@
+/* Estilo Menú Lateral */
+.lateral{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding:16px;
+    margin-top:50px;
+}
+
+.lateral h2{
+    text-decoration: underline;
+}
+
+.lateral__lista{
+    list-style: none;
+}
+
+.lateral__lista li{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.lateral__lista li a{
+    color:#302f4e;
+    font-weight: 700;
+}
+
+.lateral__lista li a:hover{
+    background-color: #302f4e;
+    padding:5px;
+    border-radius: 5px;
+    color:#ee8968;
+    transition: all 0.5s;
+}

@@ -1,0 +1,58 @@
+/* Media Queries adicionales para arreglar el footer */
+@media only screen and (min-width: 576px) and (max-width: 618px){
+    /* Footer */
+    footer{
+        flex-direction: column;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    footer p span{
+        display:block;
+    }
+}
+
+
+/* Media queries adicionales para arreglar el grid de productos y en las categorías */
+@media only screen and (min-width: 993px) and (max-width: 1130px){
+/* Productos galería */
+.galeria--prod{
+    grid-template-columns: repeat (2,1fr);
+    grid-template-areas:"productos productos"
+                        "aspire inspirion" 
+                        "thinkpad macbook"
+                        "zbook surfacebook"
+                        "stealth blade" 
+                        "notebook_9 zephyrus"
+                        "legion predator"
+                        "nitro strix" 
+                        "tuf aero"
+                        "aorus katana"
+                        "vivobook pavilion" 
+                        "ideapad swift"
+                        "max cloudbook"
+                        "v15 modern" 
+                        "flash .";
+}
+
+.galeria__tarjeta{
+    width: 30vw;
+}
+
+.galeria__img{
+    height: 15vw;
+}
+
+/* Categorías galería */
+.galeria--cat{
+    grid-template-columns: repeat (2,1fr);
+    grid-template-areas:"productos productos"
+                        "cat1 cat2" 
+                        "cat3 cat4"
+                        "cat5 cat6"
+                        "cat7 cat8" 
+                        "cat9 .";
+}
+}

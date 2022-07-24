@@ -1,0 +1,153 @@
+/* Estilo Galería */
+.galeria--prod{
+    display:grid;
+    grid-template-columns: repeat (3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:"productos productos productos"
+                        "aspire inspirion thinkpad"
+                        "macbook zbook surfacebook"
+                        "stealth blade notebook_9"
+                        "zephyrus legion predator"
+                        "nitro strix tuf"
+                        "aero aorus katana"
+                        "vivobook pavilion ideapad"
+                        "swift max cloudbook"
+                        "v15 modern flash";
+    margin:20px;
+    gap:1vw;
+}
+
+.titulo--prod{
+    grid-area:productos;
+    text-align: center;
+    font-size: 40px;
+}
+
+.aspire{
+    grid-area: aspire;
+}
+
+.inspirion{
+    grid-area: inspirion;
+}
+
+.thinkpad{
+    grid-area: thinkpad;
+}
+
+.macbook{
+    grid-area: macbook;
+}
+
+.zbook{
+    grid-area: zbook;
+}
+
+.surfacebook{
+    grid-area: surfacebook;
+}
+
+.zephyrus{
+    grid-area: zephyrus;
+}
+
+.legion{
+    grid-area: legion;
+}
+
+.predator{
+    grid-area: predator;
+}
+
+.nitro{
+    grid-area: nitro;
+}
+
+.strix{
+    grid-area: strix;
+}
+
+.tuf{
+    grid-area: tuf;
+}
+
+.aero{
+    grid-area: aero
+}
+
+.aorus{
+    grid-area: aorus
+}
+
+.katana{
+    grid-area: katana;
+}
+
+.vivobook{
+    grid-area: vivobook;
+}
+
+.pavilion{
+    grid-area: pavilion;
+}
+
+.ideapad{
+    grid-area: ideapad;
+}
+
+.swift{
+    grid-area: swift;
+}
+
+.max{
+    grid-area: max;
+}
+
+.cloudbook{
+    grid-area: cloudbook;
+}
+
+.v15{
+    grid-area: v15;
+}
+
+.modern{
+    grid-area: modern;
+}
+
+.flash{
+    grid-area: flash;
+}
+
+.galeria h1{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color:#302f4e;
+    margin: 40px 0 0 30px;
+}
+
+.galeria__tarjeta{
+    border:solid 1px rgb(202, 202, 202);
+    border-radius: 10px;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+}
+
+.galeria__tarjeta:hover{
+    background-color:rgb(202, 202, 202);
+    transition: all 0.7s;
+}
+
+.galeria__tarjeta h3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.galeria__img{
+    height: 10vw;
+}

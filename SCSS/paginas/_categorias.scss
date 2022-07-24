@@ -1,0 +1,48 @@
+/* Estilo Categorías */
+.galeria--cat{
+    display:grid;
+    grid-template-columns: repeat (3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:"productos productos productos"
+                        "cat1 cat2 cat3"
+                        "cat4 cat5 cat6"
+                        "cat7 cat8 cat9";
+    margin:20px;
+    gap:1vw;
+}
+
+.cat1{
+    grid-area: cat1;
+}
+
+.cat2{
+    grid-area: cat2;
+}
+
+.cat3{
+    grid-area: cat3;
+}
+
+.cat4{
+    grid-area: cat4;
+}
+
+.cat5{
+    grid-area: cat5;
+}
+
+.cat6{
+    grid-area: cat6;
+}
+
+.cat7{
+    grid-area: cat7;
+}
+
+.cat8{
+    grid-area: cat8;
+}
+
+.cat9{
+    grid-area: cat9;
+}
