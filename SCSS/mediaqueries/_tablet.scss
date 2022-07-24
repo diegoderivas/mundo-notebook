@@ -3,21 +3,9 @@
     /* Footer */
     footer p{
         text-align: center;
-    }
-
-    footer p span{
+        span{
         display:block;
-    }
-    
-
-    /* Index Portada */
-    .portada--index{
-        display:none;
-    }
-
-    .portada--recortada{
-        display:block;
-        width:100%;
+        }
     }
 
     /* Index Título */
@@ -36,11 +24,10 @@
                             "arq" 
                             "ofi";
         row-gap:50px;
-    }
-
-    .categorias__img{
-        height: auto;
-        width: 50vw;
+        &__img{
+            height: auto;
+            width: 50vw;
+        }
     }
 
     /* Index info */
@@ -54,25 +41,19 @@
         gap: 10px;
     }
 
-    /* Main Productos */
-    .main--flex{
-        flex-direction: column;
-        align-items: center;
-    }
-
     /* Estilo Menú Lateral */
     .lateral{
         margin-top:0;
         padding-bottom: 0;
         width: auto;
-    }
+        
+        h2{
+            text-align: center;
+        }
 
-    .lateral h2{
-        text-align: center;
-    }
-
-    .lateral__lista li{
-        text-align: center;
+        &__lista li{
+            text-align: center;
+        }
     }
 
     /* Productos galería */
@@ -95,12 +76,14 @@
                             "flash .";
     }
 
-    .galeria__tarjeta{
-        width: 40vw;
-    }
-    
-    .galeria__img{
-        height: 20vw;
+    .galeria{
+        &__tarjeta{
+            width: 40vw;
+        }
+        
+        &__img{
+            height: 20vw;
+        }
     }
 
     /* Categorías galería */

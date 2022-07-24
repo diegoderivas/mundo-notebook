@@ -28,12 +28,12 @@
                             "arq" 
                             "ofi";
         row-gap:20px;
-    }
-
-    .categorias__img{
+        &__img{
         height: auto;
         width: 75vw;
+        }
     }
+
 
     /* Index info */
     .info{
@@ -48,71 +48,70 @@
         gap: 10px;
     }
 
-        /* Main Productos */
-        .main--flex{
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        /* Estilo Menú Lateral */
-        .lateral{
-            width: auto;
-            margin-top:0;
-            padding-bottom: 0;
-        }
-    
-        .lateral h2{
+    /* Main Productos */
+    .main--flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilo Menú Lateral */
+    .lateral{
+        width: auto;
+        margin-top:0;
+        padding-bottom: 0;
+        h2{
             text-align: center;
         }
-    
-        .lateral__lista li{
+        &__lista li{
             text-align: center;
         }
-    
-        /* Productos galería */
-        .galeria--prod{
-            
-            display:grid;
-            grid-template-columns: repeat (2,1fr);
-            grid-template-areas:"productos"
-                                "aspire" 
-                                "inspirion" 
-                                "thinkpad"
-                                "macbook" 
-                                "zbook" 
-                                "surfacebook"
-                                "stealth" 
-                                "blade" 
-                                "notebook_9"
-                                "zephyrus" 
-                                "legion" 
-                                "predator"
-                                "nitro" 
-                                "strix" 
-                                "tuf"
-                                "aero"
-                                "aorus" 
-                                "katana"
-                                "vivobook" 
-                                "pavilion" 
-                                "ideapad"
-                                "swift" 
-                                "max" 
-                                "cloudbook"
-                                "v15" 
-                                "modern" 
-                                "flash";
-            margin:20px;
-            gap:2vw;
+    }
+
+    /* Productos galería */
+    .galeria--prod{
+        display:grid;
+        grid-template-columns: repeat (2,1fr);
+        grid-template-areas:"productos"
+                            "aspire" 
+                            "inspirion" 
+                            "thinkpad"
+                            "macbook" 
+                            "zbook" 
+                            "surfacebook"
+                            "stealth" 
+                            "blade" 
+                            "notebook_9"
+                            "zephyrus" 
+                            "legion" 
+                            "predator"
+                            "nitro" 
+                            "strix" 
+                            "tuf"
+                            "aero"
+                            "aorus" 
+                            "katana"
+                            "vivobook" 
+                            "pavilion" 
+                            "ideapad"
+                            "swift" 
+                            "max" 
+                            "cloudbook"
+                            "v15" 
+                            "modern" 
+                            "flash";
+        margin:20px;
+        gap:2vw;
+    }
+
+    .galeria{
+        &__tarjeta{
+        width: 80vw;
         }
     
-        .galeria__tarjeta{
-            width: 80vw;
-        }
-        
-        .galeria__img{
+        &__img{
             height: 40vw;
         }
+    }
 
     /* Categorías galería */
     .galeria--cat{
@@ -129,5 +128,4 @@
                             "cat9";
     gap:2vw;
     }
-
 }

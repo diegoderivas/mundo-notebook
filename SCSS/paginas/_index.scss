@@ -1,27 +1,15 @@
 /* Estilo Main Index */
 
-.portada--index{
-    width: 100%;
-    margin-bottom:50px;
-}
-
-.portada--recortada{
-    display:none;
-    width: 100vw;
-    margin-bottom:50px;
-}
-
 .main--index{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.main--index h1{
-    font-size: 50px;
-    font-weight: 600;
-    margin: 20px 0 50px 0;
-    color:#302f4e;
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+        margin: 20px 0 50px 0;
+        color: $violeta-principal;
+    }
 }
 
 /* Estilo Categorias Index*/
@@ -34,47 +22,45 @@
     align-items: center;
     justify-items: center;
     padding: 16px;
-}
+    &__gam{
+        grid-area: gam;
+    }
+    
+    &__arq{
+        grid-area: arq;
+    }
+    
+    &__ofi{
+        grid-area:ofi;
+    }
+    
+    &__img{
+        height: 15vw;
+        width:auto;
+        &:hover{
+            transform: scale(1.15,1.15);
+            transition: all 0.25s;
+        }
+    }
 
-.categorias__gam{
-    grid-area: gam;
-}
+    &__tarjeta a h2{
+        text-align: center;
+        color: $naranja-principal;
+        background-color: $violeta-principal;
+        border-radius: 10px;
+    }
 
-.categorias__arq{
-    grid-area: arq;
-}
-
-.categorias__ofi{
-    grid-area:ofi;
-}
-
-.categorias__img{
-    height: 15vw;
-    width:auto;
-}
-
-.categorias__img:hover{
-    transform: scale(1.15,1.15);
-    transition: all 0.25s;
-}
-
-.categorias__tarjeta a h2{
-    text-align: center;
-    color:#ee8968;
-    background-color: #302f4e;
-    border-radius: 10px;
-}
-
-.categorias__tarjeta--gaming{
-    grid-area: gam;
-}
-
-.categorias__tarjeta--arquitectura{
-    grid-area: arq;
-}
-
-.categorias__tarjeta--oficina{
-    grid-area: ofi
+    &__tarjeta--gaming{
+        grid-area: gam;
+    }
+    
+    &__tarjeta--arquitectura{
+        grid-area: arq;
+    }
+    
+    &__tarjeta--oficina{
+        grid-area: ofi
+    }
 }
 
 /* Estilo info index */
@@ -85,35 +71,34 @@
     grid-template-rows: 1fr;
     grid-template-areas: "envios garantia credito telefono";
     gap: 10px;
-}
 
-.info__envios{
-    grid-area: envios;
-}
-
-.info__garantia{
-    grid-area: garantia;
-}
-
-.info__credito{
-    grid-area: credito;
-}
-
-.info__telefono{
-    grid-area: telefono;
-}
-
-.info__tarjetas{
-    display:flex;
-    align-items: center;
-    height: 50px;
-    padding:10px;
-    width: 200px;
-}
-
-.info__tarjetas p{
-    font-weight: 900;
-    padding:10px;
+    &__envios{
+        grid-area: envios;
+    }
+    
+    &__garantia{
+        grid-area: garantia;
+    }
+    
+    &__credito{
+        grid-area: credito;
+    }
+    
+    &__telefono{
+        grid-area: telefono;
+    }
+    
+    .info__tarjetas{
+        display:flex;
+        align-items: center;
+        height: 50px;
+        padding:10px;
+        width: 200px;
+        p{
+        font-weight: 900;
+        padding:10px;
+        }
+    }
 }
 
 .icono{

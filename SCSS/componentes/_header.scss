@@ -26,16 +26,14 @@ header{
     }
 }
 
-
 .img__lupa{
     height: 25px;
 }
 
 .btn{
     border:#ee8968 1px solid;
-}
-
-.btn:hover{
-    background-color: #ee8968;
-    border:#ee8968 1px solid;
+    &:hover{
+        background-color: #ee8968;
+        border:#ee8968 1px solid;
+    }
 }
