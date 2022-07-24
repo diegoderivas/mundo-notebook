@@ -143,13 +143,14 @@ header {
     grid-area: credito; }
   .info__telefono {
     grid-area: telefono; }
-  .info .info__tarjetas {
+  .info__tarjetas {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 50px;
     padding: 10px;
-    width: 200px; }
-    .info .info__tarjetas p {
+    width: 210px; }
+    .info__tarjetas p {
       font-weight: 900;
       padding: 10px; }
 
@@ -381,14 +382,8 @@ header {
   /* Footer */
   footer p {
     text-align: center; }
-  footer p span {
-    display: block; }
-  /* Index Portada */
-  .portada--index {
-    display: none; }
-  .portada--recortada {
-    display: block;
-    width: 100%; }
+    footer p span {
+      display: block; }
   /* Index Título */
   .main--index h1 {
     font-size: 30px;
@@ -401,9 +396,9 @@ header {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "gam"  "arq"  "ofi";
     row-gap: 50px; }
-  .categorias__img {
-    height: auto;
-    width: 50vw; }
+    .categorias__img {
+      height: auto;
+      width: 50vw; }
   /* Index info */
   .info {
     margin: 50px 0 50px 0;
@@ -412,19 +407,15 @@ header {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "envios garantia"  "credito telefono";
     gap: 10px; }
-  /* Main Productos */
-  .main--flex {
-    flex-direction: column;
-    align-items: center; }
   /* Estilo Menú Lateral */
   .lateral {
     margin-top: 0;
     padding-bottom: 0;
     width: auto; }
-  .lateral h2 {
-    text-align: center; }
-  .lateral__lista li {
-    text-align: center; }
+    .lateral h2 {
+      text-align: center; }
+    .lateral__lista li {
+      text-align: center; }
   /* Productos galería */
   .galeria--prod {
     grid-template-columns: repeat 2, 1fr;
@@ -446,10 +437,10 @@ header {
   /* Footer */
   footer {
     flex-direction: column; }
-  footer p {
-    text-align: center; }
-  footer p span {
-    display: block; } }
+    footer p {
+      text-align: center; }
+      footer p span {
+        display: block; } }
 
 /* Media queries adicionales para arreglar el grid de productos y en las categorías */
 @media only screen and (min-width: 993px) and (max-width: 1130px) {
