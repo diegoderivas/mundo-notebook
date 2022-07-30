@@ -456,3 +456,8 @@ header {
   .galeria--cat {
     grid-template-columns: repeat 2, 1fr;
     grid-template-areas: "productos productos" "cat1 cat2"  "cat3 cat4" "cat5 cat6" "cat7 cat8"  "cat9 ."; } }
+
+/* Media Queries adicionales para arreglar el header */
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+  .header__navegacion {
+    flex-direction: column; } }
