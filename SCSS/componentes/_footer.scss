@@ -3,8 +3,7 @@ footer{
     background-color: $violeta-principal;
     padding: 16px;
     color: $naranja-principal;
-    display: flex;
-    align-items: center;
+    @extend .flex-items-center;
     justify-content: space-between;
     flex-wrap: wrap;
     

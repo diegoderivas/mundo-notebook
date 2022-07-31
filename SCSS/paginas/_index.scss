@@ -1,11 +1,10 @@
 /* Estilo Main Index */
 
 .main--index{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .flex-column;
+    @extend .flex-items-center;
     h1{
-        font-size: 50px;
+        font-size: 3rem;
         font-weight: 600;
         margin: 20px 0 50px 0;
         color: $violeta-principal;

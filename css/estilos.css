@@ -1,7 +1,15 @@
 @charset "UTF-8";
 /* Colores */
-/* Íconos Bootstrap */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+.flex-column, .lateral, .main--index, .galeria__tarjeta {
+  display: flex;
+  flex-direction: column; }
+
+.flex-items-center, footer, .main--index, .galeria__tarjeta {
+  display: flex;
+  align-items: center; }
+
+/* Íconos Bootstrap */
 /* Reset CSS */
 * {
   margin: 0px;
@@ -20,8 +28,6 @@ footer {
   background-color: #302f4e;
   padding: 16px;
   color: #ee8968;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap; }
   footer .footer__logo {
@@ -42,7 +48,7 @@ header {
       display: flex;
       justify-content: flex-end; }
     header .header__item {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 700;
       color: #ee8968; }
       header .header__item:hover {
@@ -60,8 +66,6 @@ header {
 
 /* Estilo Menú Lateral */
 .lateral {
-  display: flex;
-  flex-direction: column;
   width: 30vw;
   padding: 16px;
   margin-top: 50px; }
@@ -71,7 +75,7 @@ header {
     list-style: none; }
     .lateral__lista li {
       padding: 10px 0;
-      font-size: 20px; }
+      font-size: 1.25rem; }
       .lateral__lista li a {
         color: #302f4e;
         font-weight: 700; }
@@ -83,15 +87,11 @@ header {
           transition: all 0.5s; }
 
 /* Estilo Main Index */
-.main--index {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .main--index h1 {
-    font-size: 50px;
-    font-weight: 600;
-    margin: 20px 0 50px 0;
-    color: #302f4e; }
+.main--index h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 20px 0 50px 0;
+  color: #302f4e; }
 
 /* Estilo Categorias Index*/
 .categorias {
@@ -291,7 +291,7 @@ header {
 .galeria h1 {
   width: 100%;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #302f4e;
   margin: 40px 0 0 30px; }
@@ -301,8 +301,6 @@ header {
   border-radius: 10px;
   width: 25vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 10px; }
   .galeria__tarjeta:hover {
     background-color: #cacaca;
