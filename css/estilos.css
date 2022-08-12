@@ -373,7 +373,10 @@ header {
   .galeria--cat {
     grid-template-columns: 1fr;
     grid-template-areas: "productos" "cat1"  "cat2"  "cat3"  "cat4" "cat5"  "cat6" "cat7"  "cat8"  "cat9";
-    gap: 2vw; } }
+    gap: 2vw; }
+  /* Contacto */
+  .mapa {
+    height: 50vh; } }
 
 /* Media Queries para tablet */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
@@ -427,8 +430,8 @@ header {
     grid-template-columns: repeat 2, 1fr;
     grid-template-areas: "productos productos" "cat1 cat2"  "cat3 cat4" "cat5 cat6" "cat7 cat8"  "cat9 ."; }
   /* Contacto */
-  .main--centrado p {
-    margin-bottom: 0; } }
+  .mapa {
+    height: 50vh; } }
 
 /* Media Queries adicionales para arreglar el footer */
 @media only screen and (min-width: 576px) and (max-width: 618px) {
