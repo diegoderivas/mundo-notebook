@@ -10,9 +10,8 @@
 
     /* Index Título */
     .main--index h1{
-        font-size:30px;
         margin: 0;
-    }
+    } 
 
     /* Index categorias */
     .categorias{
@@ -23,7 +22,7 @@
         grid-template-areas:"gam" 
                             "arq" 
                             "ofi";
-        row-gap:50px;
+        row-gap: 3.1rem;
         &__img{
             height: auto;
             width: 50vw;
@@ -32,13 +31,13 @@
 
     /* Index info */
     .info{
-        margin: 50px 0 50px 0;
+        margin: 3.1rem 0 3.1rem 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "envios garantia" 
                             "credito telefono";
-        gap: 10px;
+        gap: 0.6rem;
     }
 
     /* Estilo Menú Lateral */

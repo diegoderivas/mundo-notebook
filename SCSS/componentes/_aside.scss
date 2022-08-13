@@ -2,8 +2,8 @@
 .lateral{
     @extend .flex-column;
     width: 30vw;
-    padding:16px;
-    margin-top:50px;
+    padding:1rem;
+    margin-top:3.125rem;
     
     h2{
         text-decoration: underline;
@@ -12,15 +12,15 @@
     &__lista{
         list-style: none;
         li{
-            padding: 10px 0;
-            font-size: 1.25rem;
+            padding: 0.6rem 0;
+            font-size: 1rem;
             a{
                 color:$violeta-principal;
                 font-weight: 700;
                 &:hover{
                     background-color: $violeta-principal;
-                    padding:5px;
-                    border-radius: 5px;
+                    padding: 0.2rem;
+                    border-radius: 0.3rem;
                     color: $naranja-principal;
                     transition: all 0.5s;
                 }
