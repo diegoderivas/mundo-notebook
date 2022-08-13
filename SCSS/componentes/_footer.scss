@@ -6,7 +6,10 @@ footer{
     @extend .flex-items-center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    p{
+        align-self: center;
+        margin:0;
+    }
     .footer{
         &__logo{
             height: 70px;

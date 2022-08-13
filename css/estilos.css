@@ -30,6 +30,9 @@ footer {
   color: #ee8968;
   justify-content: space-between;
   flex-wrap: wrap; }
+  footer p {
+    align-self: center;
+    margin: 0; }
   footer .footer__logo {
     height: 70px; }
   footer .footer__icono {
@@ -54,12 +57,27 @@ header {
       header .header__item:hover {
         text-decoration: underline;
         color: #ee8968; }
+      header .header__item:focus {
+        color: #ee8968; }
+
+.dropdown-menu-dark {
+  background-color: #544a68; }
+
+.dropdown-item {
+  color: #ee8968;
+  font-size: 1rem;
+  font-weight: 600; }
+  .dropdown-item:hover {
+    color: #302f4e;
+    background-color: #ee8968d0;
+    border-radius: 0.25rem;
+    transition: all 0.25s; }
 
 .img__lupa {
   height: 1.5rem; }
 
 .btn {
-  border: #ee8968 1px solid; }
+  border: black 1px solid; }
   .btn:hover {
     background-color: #ee8968;
     border: #ee8968 1px solid; }
@@ -84,7 +102,7 @@ header {
           padding: 0.2rem;
           border-radius: 0.3rem;
           color: #ee8968;
-          transition: all 0.5s; }
+          transition: all 0.25s; }
 
 /* Estilo Main Index */
 .main--index h1 {
@@ -318,10 +336,14 @@ header {
 
 /* Media Queries para celular*/
 @media only screen and (min-width: 320px) and (max-width: 575px) {
+  header .header__item:hover {
+    text-decoration: none; }
   /* Footer */
   footer {
     flex-direction: column; }
     footer p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       text-align: center; }
       footer p span {
         display: block; }
@@ -382,6 +404,9 @@ header {
 
 /* Media Queries para tablet */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
+  /* Estilo Header */
+  header .header__item:hover {
+    text-decoration: none; }
   /* Footer */
   footer p {
     text-align: center; }
@@ -435,11 +460,13 @@ header {
     height: 50vh; } }
 
 /* Media Queries adicionales para arreglar el footer */
-@media only screen and (min-width: 576px) and (max-width: 618px) {
+@media only screen and (min-width: 576px) and (max-width: 699px) {
   /* Footer */
   footer {
     flex-direction: column; }
     footer p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       text-align: center; }
       footer p span {
         display: block; } }

@@ -1,9 +1,11 @@
 /* Media Queries adicionales para arreglar el footer */
-@media only screen and (min-width: 576px) and (max-width: 618px){
+@media only screen and (min-width: 576px) and (max-width: 699px){
     /* Footer */
     footer{
         flex-direction: column;
         p{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
             text-align: center;
             span{
                 display:block;

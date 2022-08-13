@@ -22,7 +22,26 @@ header{
                 text-decoration:underline;
                 color:$naranja-principal;
             }
+            &:focus{
+                color:$naranja-principal;
+            }
         }
+    }
+}
+
+.dropdown-menu-dark{
+    background-color: #544a68;
+}
+
+.dropdown-item{
+    color: $naranja-principal;
+    font-size: 1rem;
+    font-weight: 600;
+    &:hover{
+        color:$violeta-principal;
+        background-color: $naranja-principal-transparencia;
+        border-radius: 0.25rem;
+        transition: all 0.25s;
     }
 }
 
@@ -31,7 +50,7 @@ header{
 }
 
 .btn{
-    border:#ee8968 1px solid;
+    border: black 1px solid;
     &:hover{
         background-color: #ee8968;
         border:#ee8968 1px solid;
