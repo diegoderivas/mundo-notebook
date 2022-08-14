@@ -92,17 +92,16 @@ header {
   .lateral__lista {
     list-style: none; }
     .lateral__lista li {
-      padding: 0.6rem 0;
+      padding: 0.5rem 0;
       font-size: 1rem; }
       .lateral__lista li a {
         color: #302f4e;
         font-weight: 700; }
         .lateral__lista li a:hover {
           background-color: #302f4e;
-          padding: 0.2rem;
+          padding: 0.3rem;
           border-radius: 0.3rem;
-          color: #ee8968;
-          transition: all 0.25s; }
+          color: #ee8968; }
 
 /* Estilo Main Index */
 .main--index h1 {
