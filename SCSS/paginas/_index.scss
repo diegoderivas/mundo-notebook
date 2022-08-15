@@ -46,6 +46,7 @@
         color: $naranja-principal;
         background-color: $violeta-principal;
         border-radius: 0.6rem;
+        border: solid white 5px;
         &:hover{
             border: solid $naranja-principal 5px;
             transition: all 0.25s;
