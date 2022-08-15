@@ -77,7 +77,7 @@ header {
   height: 1.5rem; }
 
 .btn {
-  border: black 2px solid; }
+  border: black 1px solid; }
   .btn:hover {
     background-color: #ee8968;
     border: #ee8968 1px solid; }
